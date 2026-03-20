@@ -24,6 +24,6 @@ def show_button_1():
     return f"<p>You have now pressed it {stats.get("button_1", 0)} time(s).</p>"
 def press_button_1():
     add_stat("button_1")
-    return f"<p>Pressed button #1!</p> <p>You have now pressed it {stats["button_1"]} time(s).</p>"
+    return { "pressed": stats.get("button_1", 0) }
 
     # return "<p></p>"
